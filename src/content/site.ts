@@ -154,7 +154,7 @@ export const how = {
  * 'original': the illustrated night river behind the hero, the aarti photo behind the statement.
  * 'swapped': the aarti photo behind the hero, the illustrated night river behind the statement.
  */
-export const backdrops = 'original' as 'original' | 'swapped'
+export const backdrops = 'swapped' as 'original' | 'swapped'
 
 export const promise = {
   photo: 'aarti-evening-haridwar',
