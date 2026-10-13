@@ -1,0 +1,71 @@
+{
+  "_note": "Photos come from Wikimedia Commons under licences that allow commercial use with credit. Run `npm run photos` after editing this list: it downloads each file, records author and licence, and writes responsive AVIF/WebP versions to public/photos.",
+  "photos": [
+    {
+      "slug": "aarti-evening-haridwar",
+      "file": "File:Ganga aarti of haridwar.jpg",
+      "alt": "Evening aarti at Har Ki Pauri in Haridwar, with lamps reflected in the Ganga",
+      "position": "50% 60%"
+    },
+    {
+      "slug": "aarti-fire-haridwar",
+      "file": "File:Ganga Aarti Haridwar.jpg",
+      "alt": "Priests swinging large brass fire lamps during the Ganga Aarti at Haridwar",
+      "position": "40% 45%"
+    },
+    {
+      "slug": "sangam-sunset-boats",
+      "file": "File:Kumbh Mela 2019, India (47239475162).jpg",
+      "alt": "Boats crossing the Sangam at Prayagraj at sunset, with birds over the water",
+      "position": "55% 60%"
+    },
+    {
+      "slug": "procession-pontoon",
+      "file": "File:Kumbh Mela2001.JPG",
+      "alt": "A procession with saffron flags crossing a pontoon bridge over the Ganga during the Kumbh Mela",
+      "position": "45% 55%"
+    },
+    {
+      "slug": "tent-city-night",
+      "file": "File:Prayagraj ardh kumbh mela 2019 at Night.jpg",
+      "alt": "The Kumbh tent city at Prayagraj lit up at night",
+      "position": "50% 55%"
+    },
+    {
+      "slug": "ram-ghat-ujjain",
+      "file": "File:Ujjain, Ram Ghat (9840921865).jpg",
+      "alt": "Temples along Ram Ghat on the Shipra river in Ujjain",
+      "position": "35% 55%"
+    },
+    {
+      "slug": "ramkund-nashik",
+      "file": "File:Kumbh @ Nashik 2015 (21752545956).jpg",
+      "alt": "Flower offerings around a Nandi statue in the water at Ramkund, Nashik, during the 2015 Kumbh",
+      "position": "40% 60%"
+    },
+    {
+      "slug": "pontoon-walkers",
+      "file": "File:Kumbh Mela 2019, January 15 - March 4 (46535439584).jpg",
+      "alt": "Pilgrims walking across a pontoon bridge over the Ganga at Prayagraj",
+      "position": "72% 70%"
+    },
+    {
+      "slug": "tents-prayagraj",
+      "file": "File:Kumbh Mela 2019, January 15 - March 4 (47259005521).jpg",
+      "alt": "Pilgrims resting among the tents of the Kumbh Mela camp at Prayagraj",
+      "position": "45% 65%"
+    },
+    {
+      "slug": "shahi-snan-ujjain",
+      "file": "File:Simhasth2016 Ujjain Snan1.jpg",
+      "alt": "Pilgrims bathing in the Shipra on the main bathing day of the 2016 Simhastha in Ujjain",
+      "position": "50% 55%"
+    },
+    {
+      "slug": "sangam-sun-boats",
+      "file": "File:Kumbh Sunset.jpg",
+      "alt": "The sun low over the river at the Kumbh, with boats silhouetted on the water",
+      "position": "62% 45%"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+test-results
+playwright-report
+reports
+.env
+.env.local
+*.log
+dist-artifact
+assets-src
+.vercel

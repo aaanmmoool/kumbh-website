@@ -1,0 +1,575 @@
+@import "tailwindcss";
+@import "@fontsource-variable/eczar/wght.css";
+@import "@fontsource/mukta/400.css";
+@import "@fontsource/mukta/500.css";
+@import "@fontsource/mukta/600.css";
+
+/* ------------------------------------------------------------------
+   Design tokens — "a day on the ghat"
+   Night indigo → first light → sandstone noon → dusk → lamp-lit night
+   ------------------------------------------------------------------ */
+@theme {
+  --color-night: #0d1331;
+  --color-night-deep: #080c22;
+  --color-indigo: #222a5c;
+  --color-indigo-soft: #3a4277;
+  --color-ivory: #f3ecdf;
+  --color-ivory-dim: #d9d0bf;
+  --color-sand: #e5d5b7;
+  --color-sand-deep: #cbb38a;
+  --color-saffron: #d68b38;
+  --color-saffron-deep: #93520f;
+  --color-gold: #b8954f;
+  --color-gold-pale: #e2c98f;
+  --color-teal: #2c6b70;
+  --color-river: #3f6690;
+  --color-ink: #23201c;
+  --color-ink-soft: #4d463d;
+
+  --font-serif: "Eczar Variable", "Eczar", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Mukta", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-river: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --breakpoint-xs: 25rem;
+}
+
+@layer base {
+  :root {
+    --gutter: clamp(1.25rem, 0.6rem + 3.2vw, 3.5rem);
+    --header-h: 4.25rem;
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: var(--color-night);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-weight: 450;
+    line-height: 1.06;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  [id] {
+    scroll-margin-top: 1rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-saffron);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--color-saffron);
+    color: var(--color-night);
+  }
+
+  [lang="hi"],
+  [lang="sa"] {
+    font-family: var(--font-serif);
+    letter-spacing: 0;
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 88rem;
+    margin-inline: auto;
+    padding-left: max(var(--gutter), env(safe-area-inset-left));
+    padding-right: max(var(--gutter), env(safe-area-inset-right));
+  }
+
+  /* Type scale — a 1.25 modular scale, opened up for display sizes */
+  .t-display {
+    font-family: var(--font-serif);
+    font-weight: 430;
+    font-size: clamp(2.55rem, 1.2rem + 4.4vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.026em;
+  }
+  .t-h2 {
+    font-family: var(--font-serif);
+    font-weight: 440;
+    font-size: clamp(2rem, 1.25rem + 3.3vw, 4.1rem);
+    line-height: 1.02;
+    letter-spacing: -0.022em;
+  }
+  .t-statement {
+    font-family: var(--font-serif);
+    font-weight: 420;
+    font-size: clamp(1.75rem, 1.1rem + 2.7vw, 3.4rem);
+    line-height: 1.12;
+    letter-spacing: -0.016em;
+  }
+  .t-h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: clamp(1.35rem, 1.1rem + 0.9vw, 1.85rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  .t-lede {
+    font-size: clamp(1.0625rem, 0.98rem + 0.35vw, 1.3rem);
+    line-height: 1.6;
+  }
+  .t-small {
+    font-size: 0.9375rem;
+    line-height: 1.55;
+  }
+
+  .measure {
+    max-width: 34rem;
+  }
+
+  /* Paper grain: a tiny pre-rendered AVIF/WebP tile, multiplied over light sections */
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: image-set(
+      url("/textures/grain.avif") type("image/avif"),
+      url("/textures/grain.webp") type("image/webp")
+    );
+    background-size: 220px 220px;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+  }
+  .grain-dark::after {
+    mix-blend-mode: screen;
+    opacity: 0.08;
+  }
+
+  /* Jaali lattice — carved-stone screen pattern, used very quietly */
+  .jaali {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23b8954f' stroke-width='.8'%3E%3Cpath d='M28 4c6 8 6 16 0 24-6-8-6-16 0-24zm0 24c6 8 6 16 0 24-6-8-6-16 0-24zM4 28c8-6 16-6 24 0-8 6-16 6-24 0zm24 0c8-6 16-6 24 0-8 6-16 6-24 0z'/%3E%3Ccircle cx='28' cy='28' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 56px 56px;
+  }
+
+  /* Jharokha arch — the frame every illustration (or future photo) sits in */
+  .arch-mask {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120' preserveAspectRatio='none'%3E%3Cpath d='M0 120V44C0 30 8 22 18 18c8-3 14-6 20-12 5-5 9-6 12-6s7 1 12 6c6 6 12 9 20 12 10 4 18 12 18 26v76z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120' preserveAspectRatio='none'%3E%3Cpath d='M0 120V44C0 30 8 22 18 18c8-3 14-6 20-12 5-5 9-6 12-6s7 1 12 6c6 6 12 9 20 12 10 4 18 12 18 26v76z'/%3E%3C/svg%3E");
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Hero entrance — plain CSS so it plays before JavaScript hydrates
+   ------------------------------------------------------------------ */
+@keyframes rise {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes lift {
+  from {
+    transform: translateY(18px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: var(--len, 1000);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes drift {
+  from {
+    transform: translate3d(-4%, 0, 0);
+  }
+  to {
+    transform: translate3d(4%, 0, 0);
+  }
+}
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes flutter {
+  0%,
+  100% {
+    transform: skewY(0deg) scaleX(1);
+  }
+  50% {
+    transform: skewY(-5deg) scaleX(0.93);
+  }
+}
+@keyframes droplet {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(260%);
+  }
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .anim-rise {
+    animation: rise 1.15s var(--ease-soft) both;
+  }
+  .anim-fade {
+    animation: fade-in 1.4s var(--ease-soft) both;
+  }
+  .anim-fade-up {
+    animation: fade-up 1s var(--ease-soft) both;
+  }
+  .anim-lift {
+    animation: lift 1.2s var(--ease-soft) both;
+  }
+  .anim-draw {
+    stroke-dasharray: var(--len, 1000);
+    animation: draw 2.4s var(--ease-river) both;
+  }
+  .anim-drift {
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  .anim-shimmer {
+    animation: shimmer 3.2s ease-in-out infinite;
+  }
+  .anim-bob {
+    animation: bob 4.5s ease-in-out infinite;
+  }
+  .anim-flutter {
+    transform-box: fill-box;
+    transform-origin: left center;
+    animation: flutter 2.6s ease-in-out infinite;
+  }
+  .anim-droplet {
+    animation: droplet 2.2s var(--ease-river) infinite;
+  }
+  .anim-twinkle {
+    animation: twinkle 3.8s ease-in-out infinite;
+  }
+  .anim-spin-slow {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: spin-slow 120s linear infinite;
+  }
+}
+
+/* Body scroll lock for the mobile menu */
+html.menu-open,
+html.menu-open body {
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------
+   Hero composition. Everything hangs off two variables:
+   --horizon (distance from the top to the waterline) and the lotus box.
+   Phones: sky + lotus above, copy over the dark river below.
+   Desktop: copy in the sky on the left, lotus on the right.
+   ------------------------------------------------------------------ */
+.hero {
+  --horizon: clamp(15.5rem, 46svh, 26rem);
+  --lotus-x: 50%;
+  --lotus-size: min(84vw, 25rem);
+  background: linear-gradient(
+    to bottom,
+    #060a1e 0%,
+    #0d1336 calc(var(--horizon) * 0.42),
+    #232860 calc(var(--horizon) * 0.78),
+    #4a3d6c calc(var(--horizon) - 2px),
+    #1a1f4e var(--horizon),
+    #0b1030 100%
+  );
+}
+@media (min-width: 768px) {
+  .hero {
+    --horizon: clamp(20rem, 52svh, 34rem);
+    --lotus-size: min(62vw, 32rem);
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    --horizon: clamp(25rem, 70svh, 50rem);
+    --lotus-x: 73%;
+    --lotus-size: min(44vw, 44rem, 80svh);
+  }
+}
+
+.hero-glow {
+  position: absolute;
+  left: var(--lotus-x);
+  top: var(--horizon);
+  width: max(140vw, 70rem);
+  height: calc(var(--horizon) * 1.25);
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(closest-side, rgb(244 176 108 / 0.62), rgb(214 139 56 / 0.24) 32%, rgb(120 80 120 / 0.14) 58%, transparent 100%);
+  pointer-events: none;
+}
+@media (min-width: 1024px) {
+  .hero-glow {
+    width: 90vw;
+  }
+}
+
+.hero-river {
+  background: linear-gradient(to bottom, rgb(56 52 104 / 0.55), rgb(20 26 72 / 0.9) 22%, #0b1030 62%);
+}
+
+.hero-trail {
+  left: var(--lotus-x);
+  width: calc(var(--lotus-size) * 0.42);
+  height: calc(var(--lotus-size) * 0.52);
+  transform: translateX(-50%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 30%, transparent);
+  mask-image: linear-gradient(to bottom, #000 30%, transparent);
+}
+@media (max-width: 1023px) {
+  .hero-trail {
+    height: 3.25rem;
+  }
+}
+
+.bank,
+.bank-reflection {
+  position: absolute;
+}
+.bank {
+  bottom: calc(100% - var(--horizon));
+}
+.bank-reflection {
+  top: var(--horizon);
+  transform: scaleY(-1);
+  opacity: 0.22;
+  -webkit-mask-image: linear-gradient(to top, #000, transparent 65%);
+  mask-image: linear-gradient(to top, #000, transparent 65%);
+}
+.bank-left {
+  left: 0;
+  width: min(46vw, 56rem);
+}
+.bank-right {
+  right: 0;
+  width: min(40vw, 48rem);
+}
+@media (min-width: 1024px) {
+  .bank-left {
+    width: min(38vw, 46rem);
+  }
+  .bank-right {
+    width: min(30vw, 40rem);
+  }
+}
+
+.hero-emblem {
+  width: var(--lotus-size);
+  aspect-ratio: 400 / 340;
+  left: calc(var(--lotus-x) - var(--lotus-size) / 2);
+  top: calc(var(--horizon) - var(--lotus-size) * 0.66);
+}
+
+.hero-mist {
+  position: absolute;
+  left: -15%;
+  width: 130%;
+  top: calc(var(--horizon) - 3.5rem);
+  height: 7rem;
+  background: radial-gradient(closest-side, rgb(243 236 223 / 0.17), transparent);
+  pointer-events: none;
+}
+.hero-mist--low {
+  top: calc(var(--horizon) + 0.5rem);
+  height: 5rem;
+  opacity: 0.7;
+}
+
+/* Photo backdrop (backdrops: 'swapped'): darken where the copy sits so it stays readable. */
+.hero-photo-shade {
+  background:
+    linear-gradient(to bottom, rgb(6 10 30 / 0.72), rgb(6 10 30 / 0.2) 28%, rgb(6 10 30 / 0.15) 55%, rgb(11 16 48 / 0.75)),
+    rgb(8 12 34 / 0.2);
+}
+@media (min-width: 1024px) {
+  .hero-photo-shade {
+    background:
+      linear-gradient(90deg, rgb(6 10 30 / 0.86), rgb(6 10 30 / 0.6) 36%, rgb(6 10 30 / 0.12) 66%, rgb(6 10 30 / 0)),
+      linear-gradient(to bottom, rgb(6 10 30 / 0.55), rgb(6 10 30 / 0) 22%, rgb(6 10 30 / 0) 72%, rgb(11 16 48 / 0.8));
+  }
+}
+/* On wide screens the photo's waterline is lower than the illustrated one, so the lotus,
+   its glow and the mist drop down to sit on the river. Phones keep the lotus above the copy. */
+@media (min-width: 1024px) {
+  .hero--photo {
+    --lotus-drop: clamp(4rem, 12svh, 9rem);
+  }
+  .hero--photo .hero-emblem {
+    top: calc(var(--horizon) - var(--lotus-size) * 0.66 + var(--lotus-drop));
+  }
+  .hero--photo .hero-glow {
+    top: calc(var(--horizon) + var(--lotus-drop));
+  }
+  .hero--photo .hero-mist {
+    top: calc(var(--horizon) - 3.5rem + var(--lotus-drop));
+  }
+  .hero--photo .hero-mist--low {
+    top: calc(var(--horizon) + 0.5rem + var(--lotus-drop));
+  }
+}
+.hero-glow--soft {
+  background: radial-gradient(closest-side, rgb(244 176 108 / 0.32), rgb(214 139 56 / 0.12) 36%, transparent 100%);
+}
+
+/* The illustrated night river reused behind the value statement (backdrops: 'swapped').
+   The waterline sits low so the statement stays in the sky. */
+.statement-scene {
+  --horizon: calc(100% - 13rem);
+  --lotus-x: 50%;
+  --lotus-size: min(80vw, 30rem);
+  background: linear-gradient(
+    to bottom,
+    #060a1e 0%,
+    #0d1336 calc(var(--horizon) * 0.42),
+    #232860 calc(var(--horizon) * 0.78),
+    #4a3d6c calc(var(--horizon) - 2px),
+    #1a1f4e var(--horizon),
+    #0b1030 100%
+  );
+}
+@media (min-width: 768px) {
+  .statement-scene {
+    --horizon: calc(100% - 15rem);
+  }
+}
+.statement-scene .hero-glow {
+  height: 26rem;
+  background: radial-gradient(closest-side, rgb(244 176 108 / 0.5), rgb(214 139 56 / 0.2) 34%, rgb(120 80 120 / 0.12) 60%, transparent 100%);
+}
+@media (max-width: 1023px) {
+  .statement-scene .hero-trail {
+    height: 6rem;
+  }
+}
+
+.hero-scrim {
+  background: linear-gradient(to bottom, transparent, rgb(11 16 48 / 0.55) 4rem, rgb(11 16 48 / 0.8));
+}
+
+@keyframes unfurl {
+  from {
+    transform: scale(0.5, 0.12);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .anim-unfurl {
+    transform-box: view-box;
+    transform-origin: 50% 77.6%;
+    animation: unfurl 1.6s var(--ease-soft) both;
+  }
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}

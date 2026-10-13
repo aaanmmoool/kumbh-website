@@ -1,0 +1,233 @@
+{
+  "aarti-evening-haridwar": {
+    "alt": "Evening aarti at Har Ki Pauri in Haridwar, with lamps reflected in the Ganga",
+    "position": "50% 60%",
+    "width": 3840,
+    "height": 2847,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoYABIAPu1kqE2ppaOiMAgBMB2JQBhQBFj2CTyPYXenZz/UGAD+QBfJHW9zAnrLYn4qWrKtGd+tsh5pKbhjVhrsPWW9tEb08bnH5T/Z9HyP9Bwp1qszQdx7efXA6NpfjQAAAA==",
+    "credit": {
+      "author": "Swastika Thakur",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ganga_aarti_of_haridwar.jpg",
+      "title": "Ganga aarti of haridwar.jpg"
+    }
+  },
+  "aarti-fire-haridwar": {
+    "alt": "Priests swinging large brass fire lamps during the Ganga Aarti at Haridwar",
+    "position": "40% 45%",
+    "width": 3840,
+    "height": 3072,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABwBQCdASoYABMAPu1gqE4ppSOiMBgMATAdiWwAnTMbMHAk0Ymm42Jds0PcNAGX0qh2y2EQAP7s1ZCkCvjmk0DbqxxtuMlrBlaQKthxLrJxO/l+Bjwj5jR6ckDnqUC8jU9bKjwEHaPL8rKEFXQjd9f3lL6IUNCV+6Ukmg2qydzAAA==",
+    "credit": {
+      "author": "Thatwiseowl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ganga_Aarti_Haridwar.jpg",
+      "title": "Ganga Aarti Haridwar.jpg"
+    }
+  },
+  "sangam-sunset-boats": {
+    "alt": "Boats crossing the Sangam at Prayagraj at sunset, with birds over the water",
+    "position": "55% 60%",
+    "width": 3730,
+    "height": 1876,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoYAAwAPu1iqk2ppaQiMAgBMB2JQBOmUABfZRDZeGQL6wAA3Ihc8vtM/ZOhG1ZIKolDAOzZcaqPkEc/eRSLQGp2xC8mBHyxyAAAAA==",
+    "credit": {
+      "author": "Ninara from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela_2019,_India_(47239475162).jpg",
+      "title": "Kumbh Mela 2019, India (47239475162).jpg"
+    }
+  },
+  "procession-pontoon": {
+    "alt": "A procession with saffron flags crossing a pontoon bridge over the Ganga during the Kumbh Mela",
+    "position": "45% 55%",
+    "width": 3840,
+    "height": 2648,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwBACdASoYABEAPu1oq0+ppiOiMBgIATAdiWcAzBwQ6y9P8Q4gNEUMu2rnPAD+xKw9n0SnDJzy0IcvKxUKaJoX4Le7rFLFECKdg3muGo4UAAAA",
+    "credit": {
+      "author": "Yosarian",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela2001.JPG",
+      "title": "Kumbh Mela2001.JPG"
+    }
+  },
+  "tent-city-night": {
+    "alt": "The Kumbh tent city at Prayagraj lit up at night",
+    "position": "50% 55%",
+    "width": 1920,
+    "height": 1080,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      1920
+    ],
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAwCdASoYAA4APu1krU2ppaSiMAgBMB2JZwDG9CHWrwpPGEIDawAA/u6Jijxizn972ieuvQsGJgRiWh2BrCXEdIe+uySGHEWnrPYMypPAAA==",
+    "credit": {
+      "author": "Kasyap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Prayagraj_ardh_kumbh_mela_2019_at_Night.jpg",
+      "title": "Prayagraj ardh kumbh mela 2019 at Night.jpg"
+    }
+  },
+  "ram-ghat-ujjain": {
+    "alt": "Temples along Ram Ghat on the Shipra river in Ujjain",
+    "position": "35% 55%",
+    "width": 3840,
+    "height": 2560,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwBACdASoYABAAPu1kqk4ppaQiMAgBMB2JbACdMoR8eBM3YiQX2DxrcAAA/t6+rbf8x3MDZTT3i4i5E0gcGWDWwXtoqZJM8ci8wkCRV5eGE3Tq6utOWxb+s1GtpR6bcdgAAA==",
+    "credit": {
+      "author": "Arian Zwegers from Brussels, Belgium",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ujjain,_Ram_Ghat_(9840921865).jpg",
+      "title": "Ujjain, Ram Ghat (9840921865).jpg"
+    }
+  },
+  "ramkund-nashik": {
+    "alt": "Flower offerings around a Nandi statue in the water at Ramkund, Nashik, during the 2015 Kumbh",
+    "position": "40% 60%",
+    "width": 3840,
+    "height": 1686,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoYAAsAPu1orU2ppqSiMAgBMB2JQBUeg83KM8Dtva0XAAD+wGJquAKT/zp6024QhNP/NoCPb8w4B6AlIb7BmJgJ4esPWUIe35TDaQNH9qaAAA==",
+    "credit": {
+      "author": "BOMBMAN from Mumbai, India",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_@_Nashik_2015_(21752545956).jpg",
+      "title": "Kumbh @ Nashik 2015 (21752545956).jpg"
+    }
+  },
+  "pontoon-walkers": {
+    "alt": "Pilgrims walking across a pontoon bridge over the Ganga at Prayagraj",
+    "position": "72% 70%",
+    "width": 3248,
+    "height": 2155,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoYABAAPu1Ct1apoqakGAEwHYlAF2AEOw7uf2qfuZqyfAD+iyQdwLxXGOIo1PawOcnRTZ/4CwGwa+/TcxreuMx0GyBwAA==",
+    "credit": {
+      "author": "Ninara from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela_2019,_January_15_-_March_4_(46535439584).jpg",
+      "title": "Kumbh Mela 2019, January 15 - March 4 (46535439584).jpg"
+    }
+  },
+  "tents-prayagraj": {
+    "alt": "Pilgrims resting among the tents of the Kumbh Mela camp at Prayagraj",
+    "position": "45% 65%",
+    "width": 3304,
+    "height": 2118,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoYAA8APu1mq04ppaQiMAgBMB2JQBifCYhgWddlwW8SisAA/sOI7gYdxZDVrvZj+X455IDpPE9b+u8D0fUspVns+MUsRViqBmvVsAAA",
+    "credit": {
+      "author": "Ninara from Helsinki, Finland",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela_2019,_January_15_-_March_4_(47259005521).jpg",
+      "title": "Kumbh Mela 2019, January 15 - March 4 (47259005521).jpg"
+    }
+  },
+  "shahi-snan-ujjain": {
+    "alt": "Pilgrims bathing in the Shipra on the main bathing day of the 2016 Simhastha in Ujjain",
+    "position": "50% 55%",
+    "width": 3840,
+    "height": 2560,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoYABAAPu1mq04ppaQiMAgBMB2JQBOmUABpvtVtKkoxxu4AAP7qdTy19x6pkQCCBQySb44Y/gVORCzGsRnzZH+b2LbtDRYp5N899fmCyBR79VkLl7bi1AAA",
+    "credit": {
+      "author": "Suyash Dwivedi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Simhasth2016_Ujjain_Snan1.jpg",
+      "title": "Simhasth2016 Ujjain Snan1.jpg"
+    }
+  },
+  "sangam-sun-boats": {
+    "alt": "The sun low over the river at the Kumbh, with boats silhouetted on the water",
+    "position": "62% 45%",
+    "width": 3280,
+    "height": 1840,
+    "widths": [
+      480,
+      800,
+      1200,
+      1800,
+      2400
+    ],
+    "placeholder": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoYAA0APu1qrU8ppiQiMAgBMB2JZQCdAB6GmhHe26nqgIT4APt96HBcUs9Ux8oGB2JzHF1SrQk0USej0w/X/1FQelRzMZTi4IAAAA==",
+    "credit": {
+      "author": "Utkarsh786",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Kumbh_Sunset.jpg",
+      "title": "Kumbh Sunset.jpg"
+    }
+  }
+}

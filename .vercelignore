@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+dist-artifact
+reports
+test-results
+playwright-report
+assets-src
+.env
+.env.local
